@@ -45,3 +45,5 @@
 - count the element
 - limit to 5 element ( )
 - reset the count when tou reset the world
+
+# Google is a woman's best friend
