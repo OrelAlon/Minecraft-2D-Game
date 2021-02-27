@@ -282,8 +282,8 @@ function addToInventory(tileMove) {
   let movet = document.querySelector(`[id=${tileMove}].elementBox`);
   movet.textContent = parseInt(movet.textContent) + 1;
 
-  if (parseInt(movet.textContent) > 5) {
-    return parseInt(movet.textContent) == 5;
+  if (parseInt(movet.textContent) == 5) {
+    console.log("f");
   }
 }
 ///////  -----------------> reduce count from unvetory
