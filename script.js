@@ -1,6 +1,7 @@
 const playBtn = document.querySelector("#playBtn");
 
-/// active btn
-playBtn.onclick = function () {
+playBtn.addEventListener("click", toTheGame);
+
+function toTheGame() {
   return (location.href = "./world.html");
-};
+}

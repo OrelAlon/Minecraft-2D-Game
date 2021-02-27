@@ -188,9 +188,12 @@ body {
 .headline {
   color: white;
   text-align: center;
+  padding: 0;
+  margin: 1vh;
 }
 
-/* ----------------------TILES--------------------------------- */
+/* box for element in the world (diffrent style)  */
+
 .tile {
   width: auto;
   height: auto;
@@ -201,13 +204,14 @@ body {
   box-shadow: inset 0px 0px 0px 1px gold;
 }
 
-/* -------------------TOOLS----------------------- */
+/* box for tools in the world (diffrent style)  */
 
 .toolList {
   display: flex;
   flex-direction: column;
   padding-bottom: 2vh;
   margin: auto;
+  margin-top: -1vh;
 }
 
 .toolBox {
@@ -219,9 +223,10 @@ body {
   padding: 0.2rem;
   font-size: 0.6em;
   list-style-type: none;
+  margin: auto;
 }
 
-/* -------------------INVENTORY----------------------- */
+/* mt inventory  */
 
 .elementList {
   display: grid;
@@ -270,20 +275,24 @@ body {
   margin-bottom: 0;
   margin-top: 0;
 }
-.restartButtom:hover {
+
+.gobackButtom {
+  width: 4wh;
+  height: 7vh;
+  outline: none;
+  border: none;
+  padding: 2vh;
+  background: url(./img.MC/startt.png) no-repeat center center/cover;
+}
+
+.restartButtom,
+.gobackButtom:hover {
   cursor: pointer;
 }
 
 .restartButtom:active {
   transform: translateY(6px);
 }
-
-.gobackButtom {
-  width: 4wh;
-  height: 3vh;
-  outline: none;
-  border: none;
-
-  padding: 2vh;
-  background: url(./img.MC/startt.png) no-repeat center center/cover;
+.gobackButtom:active {
+  transform: translateY(6px);
 }

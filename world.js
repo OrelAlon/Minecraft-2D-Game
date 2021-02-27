@@ -214,8 +214,13 @@ toolbar.insertAdjacentElement("beforeend", gobackButtom);
 // reset game button
 restartButtom.addEventListener("click", resetting);
 // go back  button
+gobackButtom.addEventListener("click", startpage);
 
-///////going back to my html?
+///////  -----------------> go to page one
+
+function startpage() {
+  return (location.href = "./index.html");
+}
 
 ///////  -----------------> reset the count of tile
 
@@ -308,3 +313,5 @@ for (let row = 0; row < gameSize; row++) {
     gameArea[row][col].addEventListener("click", handleTileClick);
   }
 }
+
+/////////////////////////////////////////
