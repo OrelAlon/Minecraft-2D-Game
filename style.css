@@ -1,0 +1,289 @@
+/* Style for my landingPage */
+
+@font-face {
+  font-family: minecraft-font;
+  src: url("./font/Minecraft.ttf");
+}
+
+/* the box img */
+
+#axe {
+  background: url("./img.MC/Gold-Axe-icon.png") center / 45% no-repeat;
+}
+
+#shovel {
+  background: url("./img.MC/Gold-Shovel-icon.png") center / 50% no-repeat;
+}
+
+#hoe {
+  background: url("./img.MC/Gold-Hoe-icon.png") center / 50% no-repeat;
+}
+
+#wood {
+  background: url("./img.MC/wood.png") no-repeat center center/cover;
+}
+#greengold {
+  background: url("./img.MC/Gold-Ingot-icon.png") no-repeat center center/cover;
+  background-color: green;
+}
+
+#land {
+  background: url("./img.MC/land.png") no-repeat center/cover;
+}
+#stone {
+  background: url("./img.MC/stone.png") no-repeat center/cover;
+}
+#arrow {
+  background: url("./img.MC/arrow.gif") no-repeat center center/cover;
+  transform: rotate(45deg);
+}
+#sky {
+  background-color: rgb(153, 172, 255);
+}
+
+#cloud {
+  background: url(./img.MC/cloud.jpg) no-repeat center center/cover;
+}
+
+#goldgrey {
+  background: url(./img.MC/Gold-Ingot-icon.png) no-repeat center center/cover;
+  background-color: grey;
+}
+#gold {
+  background: url(./img.MC/Gold-Ingot-icon.png) no-repeat center center/cover;
+}
+
+#grass {
+  background: url(./img.MC/grass.png) no-repeat center center/cover;
+}
+
+.boxs {
+  width: 5vh;
+  height: 5vh;
+  margin: 22px 70px;
+  background-size: cover;
+  border: solid white 1px;
+}
+/* the style */
+
+body {
+  height: 100vh;
+  font-family: minecraft-font;
+  color: white;
+  position: relative;
+}
+#landingPage {
+  background: url("./img.MC/land.png") center repeat;
+  height: 114vh;
+  width: 100%;
+  margin-top: -14vh;
+  letter-spacing: 4px;
+
+  /* height: 100%; */
+  /* padding: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+#welcome {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 2vh;
+  margin: 20vh;
+}
+#instructHeader-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+}
+.thelines {
+  display: flex;
+  flex-direction: row;
+}
+
+#welcomeHeader {
+  justify-content: center;
+  align-items: center;
+  font-size: 7vh;
+  margin: 0;
+}
+#howToHeader {
+  font-size: 4vh;
+  margin: 0;
+}
+
+#firstline {
+  margin-left: 190px;
+}
+#note {
+  margin-left: 150px;
+  font-weight: bold;
+}
+#starter {
+  margin-top: -220px;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 50vw;
+}
+#playBtn {
+  padding: 1vh 1vw;
+  border: solid;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+}
+
+#playBtn:hover {
+  cursor: pointer;
+}
+
+#playBtn:active {
+  transform: translateY(4px);
+}
+
+#endline {
+  display: flex;
+  margin-top: -10vh;
+}
+#edition {
+  width: 20vw;
+}
+
+/* WORLD style ! */
+
+.container {
+  height: 100%;
+  letter-spacing: 1px;
+
+  display: grid;
+  grid-template-columns: 1fr 100vh 2fr 13vw;
+  background: url(./img.MC/goldbackground.jpg);
+}
+
+.world {
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(30, auto);
+  grid-template-rows: repeat(30, auto);
+  grid-column: 2 / 2;
+  border: solid black 3px;
+}
+
+.toolbar {
+  grid-column: 4 / 4;
+
+  background: url(./img.MC/blabk-background.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh;
+}
+.headline {
+  color: white;
+  text-align: center;
+}
+
+/* ----------------------TILES--------------------------------- */
+.tile {
+  width: auto;
+  height: auto;
+  border: transparent;
+}
+
+.tile:hover {
+  box-shadow: inset 0px 0px 0px 1px gold;
+}
+
+/* -------------------TOOLS----------------------- */
+
+.toolList {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2vh;
+  margin: auto;
+}
+
+.toolBox {
+  margin: 5px 0;
+  height: 8vh;
+  width: 5vw;
+  border: 1px solid white;
+  color: white;
+  padding: 0.2rem;
+  font-size: 0.6em;
+  list-style-type: none;
+}
+
+/* -------------------INVENTORY----------------------- */
+
+.elementList {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.elementBox {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 1vh;
+  height: 5vh;
+  width: 3vw;
+  border: 2px solid white;
+  font-size: 1em;
+  color: white;
+}
+
+.toolBox.selected {
+  border: 3px solid gold;
+}
+
+.elementBox.selected {
+  border: 3px solid gold;
+}
+.toolBox:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 1px rgb(204, 164, 54);
+}
+
+.elementBox:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 1px rgb(204, 164, 54);
+}
+
+.restartButtom {
+  background: url(./img.MC/restart-button.png) no-repeat center center/cover;
+  outline: none;
+  border: none;
+  width: 6vh;
+  border-radius: 15px;
+  padding: 4vh;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.restartButtom:hover {
+  cursor: pointer;
+}
+
+.restartButtom:active {
+  transform: translateY(6px);
+}
+
+.gobackButtom {
+  width: 4wh;
+  height: 3vh;
+  outline: none;
+  border: none;
+
+  padding: 2vh;
+  background: url(./img.MC/startt.png) no-repeat center center/cover;
+}
