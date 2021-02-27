@@ -32,4 +32,16 @@
 ## js:
 
 - set all the element
--
+- create a matrix constructed in a row and column
+  (can be easier with other function)
+- drow the world
+- build the side bar
+- tools (3)
+- elements (6)
+- restart button
+- go back button?
+- function to take tools
+- function to take element
+- count the element
+- limit to 5 element ( )
+- reset the count when tou reset the world
