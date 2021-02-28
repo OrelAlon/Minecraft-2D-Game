@@ -87,8 +87,8 @@ body {
   position: absolute;
 }
 #welcome {
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 20px;
+  background-color: rgba(255, 244, 89, 0.75);
+  border-radius: 60px;
   padding: 2vh;
   margin: 20vh;
   margin-top: 2vh;
