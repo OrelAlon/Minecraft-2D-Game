@@ -2,39 +2,39 @@
 
 @font-face {
   font-family: minecraft-font;
-  src: url("./font/Minecraft.ttf");
+  src: url('./font/Minecraft.ttf');
 }
 
 /* the box img */
 
 #axe {
-  background: url("./img.MC/Gold-Axe-icon.png") center / 45% no-repeat;
+  background: url('./img.MC/Gold-Axe-icon.png') center / 45% no-repeat;
 }
 
 #shovel {
-  background: url("./img.MC/Gold-Shovel-icon.png") center / 50% no-repeat;
+  background: url('./img.MC/Gold-Shovel-icon.png') center / 50% no-repeat;
 }
 
 #hoe {
-  background: url("./img.MC/Gold-Hoe-icon.png") center / 50% no-repeat;
+  background: url('./img.MC/Gold-Hoe-icon.png') center / 50% no-repeat;
 }
 
 #wood {
-  background: url("./img.MC/wood.png") no-repeat center center/cover;
+  background: url('./img.MC/wood.png') no-repeat center center/cover;
 }
 #greengold {
-  background: url("./img.MC/Gold-Ingot-icon.png") no-repeat center center/cover;
+  background: url('./img.MC/Gold-Ingot-icon.png') no-repeat center center/cover;
   background-color: green;
 }
 
 #land {
-  background: url("./img.MC/land.png") no-repeat center/cover;
+  background: url('./img.MC/land.png') no-repeat center/cover;
 }
 #stone {
-  background: url("./img.MC/stone.png") no-repeat center/cover;
+  background: url('./img.MC/stone.png') no-repeat center/cover;
 }
 #arrow {
-  background: url("./img.MC/arrow.gif") no-repeat center center/cover;
+  background: url('./img.MC/arrow.gif') no-repeat center center/cover;
   transform: rotate(45deg);
 }
 #sky {
@@ -74,7 +74,7 @@ body {
   color: beige;
 }
 #landingPage {
-  background: url("./img.MC/land.png") center repeat;
+  background: url('./img.MC/land.png') center repeat;
   height: 100%;
   width: 100%;
   letter-spacing: 4px;
@@ -87,7 +87,7 @@ body {
   position: absolute;
 }
 #welcome {
-  background-color: rgba(255, 244, 89, 0.75);
+  background-color: rgba(5, 5, 4, 0.75);
   border-radius: 60px;
   padding: 2vh;
   margin: 20vh;
