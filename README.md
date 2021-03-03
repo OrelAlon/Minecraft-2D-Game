@@ -2,7 +2,7 @@
 
 ## Try Me:
 
-https://app.netlify.com/sites/cocky-dijkstra-a469d1/overview
+https://cocky-dijkstra-a469d1.netlify.app/
 
 ### where to start? :
 
