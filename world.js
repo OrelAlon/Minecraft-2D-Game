@@ -275,7 +275,7 @@ function placeTheTile(tileOut, tileIn) {
     event.currentTarget.setAttribute("id", tileIn);
   }
 }
-///////  -----------------> add count to unvetory
+///////  -----------------> add count to invetory
 
 function addToInventory(tileMove) {
   let movet = document.querySelector(`[id=${tileMove}].elementBox`);
@@ -285,7 +285,7 @@ function addToInventory(tileMove) {
     console.log("f");
   }
 }
-///////  -----------------> reduce count from unvetory
+///////  -----------------> reduce count from invetory
 
 function removeFromInventory(tileBack) {
   let backt = document.querySelector(`[id=${tileBack}].elementBox`);
