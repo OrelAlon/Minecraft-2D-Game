@@ -146,8 +146,8 @@ createNewGame();
 //////  -----------------> the tools bar on the side
 
 const toolbarUp = document.createElement("h1");
-toolbarUp.classList.add("headline");
 toolbarUp.textContent = "Inventory";
+toolbarUp.classList.add("headline");
 toolbar.insertAdjacentElement("afterbegin", toolbarUp);
 
 const toolbarHead = document.createElement("h2");
@@ -204,7 +204,7 @@ const restartButtom = document.createElement("button");
 restartButtom.classList.add("restartButtom");
 toolbar.insertAdjacentElement("beforeend", restartButtom);
 
-//////  -----------------> gobackButtom
+//////  -----------------> goBackButtom
 
 const gobackButtom = document.createElement("button");
 gobackButtom.classList.add("gobackButtom");
@@ -245,7 +245,7 @@ function handleTileClick(event) {
   }
 }
 
-///////  -----------------> select the tile
+///////  -----------------> use the element
 
 function checkInventory(tilePlace) {
   if (
